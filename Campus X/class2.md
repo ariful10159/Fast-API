@@ -80,11 +80,7 @@ FastAPI তৈরি করা হয়েছে পুরোনো Python framewo
 * `/` রুটের জন্য একটি GET endpoint তৈরি করা হয় `@app.get("/")` দিয়ে ।
 * এটি একটি সাধারণ “Hello World” মেসেজ রিটার্ন করে ।
 
-**API চালানো**:
 
-* কমান্ড ব্যবহার করা হয়:
-  `uvicorn main:app --reload`
-* এখানে `--reload` দিলে কোড পরিবর্তন হলে সার্ভার নিজে থেকেই restart হয় .
 
 **Endpoint টেস্ট করা**:
 
