@@ -38,6 +38,8 @@ FastAPI তৈরি করা হয়েছে পুরোনো Python framewo
 * FastAPI সাধারণত Uvicorn server ব্যবহার করে, যা asynchronous ।
 * FastAPI async/await সাপোর্ট করে, ফলে I/O-based কাজের সময় অন্য request ব্লক হয় না ।
 
+<img src="image2.png" alt="API illustration" width="350" />
+
 **Restaurant উদাহরণ** :
 
 * Flask হলো এমন একজন ওয়েটারের মতো, যে এক অর্ডার নেয়, রান্না শেষ না হওয়া পর্যন্ত অপেক্ষা করে, তারপর সেটি পরিবেশন করে এবং এরপর নতুন অর্ডার নেয়।
