@@ -30,7 +30,7 @@
 ![API illustration](image.png)
 
 
-## API কেন দরকার: Monolithic Architecture এর সমস্যা 
+## API কেন দরকার:  Monolithic Architecture এর সমস্যা 
 ### API আসার আগের সময় (Monolithic Architecture) 
 
 * আগে পুরো application এক জায়গায় থাকত
