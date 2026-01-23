@@ -87,6 +87,90 @@
   * `...` মানে parameter **required**
 * API documentation (/docs) UI-তে description ও example দেখা যায়
 
+
+
+---
+
+## **Path() Function in FastAPI**
+
+`Path()` হলো FastAPI-এর একটি helper function যা **path parameters**-এর জন্য extra information দেয়। এর মূল কাজ হলো:
+
+1. **Metadata যোগ করা** → API documentation (Swagger UI) readable করা
+2. **Validation rules** প্রয়োগ করা → parameter safe ও correct রাখা
+3. **Default values ও example** দেখানো → client বুঝতে পারে parameter কীভাবে use করতে হবে
+
+Syntax:
+
+```python
+from fastapi import Path
+
+@app.get("/patient/{patient_id}")
+def get_patient(
+    patient_id: str = Path(..., title="Patient ID", description="ID of the patient in DB", example="P01")
+):
+    return {"patient_id": patient_id}
+```
+
+---
+
+## **Path() Options – বিস্তারিত**
+
+| Option        | Purpose                                          | Example / Notes                           |
+| ------------- | ------------------------------------------------ | ----------------------------------------- |
+| `...`         | Makes the parameter **required**                 | `Path(...)`                               |
+| `title`       | Adds a title in the documentation                | `title="Patient ID"`                      |
+| `description` | Adds a description in Swagger UI                 | `description="ID of the patient in DB"`   |
+| `example`     | Shows an example value in docs                   | `example="P01"`                           |
+| `ge`          | "Greater than or equal to" (for numbers)         | `ge=1` → value must be ≥ 1                |
+| `gt`          | "Greater than" (for numbers)                     | `gt=0` → value must be > 0                |
+| `le`          | "Less than or equal to" (for numbers)            | `le=100` → value ≤ 100                    |
+| `lt`          | "Less than" (for numbers)                        | `lt=100` → value < 100                    |
+| `min_length`  | Minimum string length                            | `min_length=2` → string ≥ 2 characters    |
+| `max_length`  | Maximum string length                            | `max_length=10` → string ≤ 10 characters  |
+| `regex`       | Regular expression pattern for string validation | `regex="^P\d{2}$"` → matches "P01", "P23" |
+
+---
+
+### **Example 1: Numeric Validation**
+
+```python
+@app.get("/items/{item_id}")
+def get_item(
+    item_id: int = Path(..., title="Item ID", ge=1, le=100)
+):
+    return {"item_id": item_id}
+```
+
+* এখানে `item_id` অবশ্যই 1 থেকে 100 এর মধ্যে হতে হবে।
+* 0 বা 101 দিলে automatic validation error হবে।
+
+---
+
+### **Example 2: String Validation with Regex**
+
+```python
+@app.get("/patients/{patient_id}")
+def get_patient(
+    patient_id: str = Path(..., title="Patient ID", min_length=3, max_length=5, regex="^P\d{2}$", example="P01")
+):
+    return {"patient_id": patient_id}
+```
+
+* ID শুরু হবে "P" দিয়ে, পরে দুইটি সংখ্যা থাকবে (e.g., P01, P23)
+* String length 3–5 এর মধ্যে হতে হবে
+* Swagger UI-তে example দেখাবে "P01"
+
+---
+
+### **Summary**
+
+* `Path()` হলো **path parameter-এর validation + documentation** tool
+* Number/ string উভয়ের জন্য ব্যবহার করা যায়
+* Swagger UI-তে title, description, example automatic দেখানো হয়
+* Invalid value দিলে FastAPI automatic **422 Unprocessable Entity** response দেয়
+
+
+
 ---
 
 ## **3. HTTP Status Codes**
@@ -213,4 +297,4 @@ http://localhost:8000/view?sort_by=height&order=descending
 
 ---
 
-চাও আমি এটাকে আগের মতো **নোট আকারে**, সব-important point ধরে রাখে এমনভাবে বানিয়ে দিই, যেন পরে exam বা practice-এর জন্য একদম ready থাকে।
+http://127.0.0.1:8000/sort?sort_by=height&order=desc
