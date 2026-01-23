@@ -1,8 +1,3 @@
-নিচে ভিডিওটির টপিকগুলো **ভিডিওর exact sequence অনুযায়ী**, পরিষ্কার, structured এবং **exam + project-ready Bangla notes** আকারে লেখা হলো।
-যেখানে advanced explanation অসম্পূর্ণ ছিল, সেখানে প্রয়োজনীয় detail যোগ করা হয়েছে।
-যেসব জায়গায় basic concept জানা জরুরি, সেগুলোও সংক্ষেপে কিন্তু পরিষ্কারভাবে যুক্ত করা হয়েছে।
-
----
 
 # FastAPI Patient Management System
 
