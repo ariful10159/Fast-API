@@ -146,6 +146,10 @@ Dynamic software-এ মূলত চার ধরনের কাজ হয়,
   * ব্লগ
   * সরকারি ওয়েবসাইট
 
+
+<img src="image.png" alt="API illustration" width="350" />
+
+
 #### Dynamic Website
 
 * অনেক বেশি interaction
