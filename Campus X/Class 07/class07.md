@@ -5,7 +5,7 @@
 
 ---
 
-## 1. প্রজেক্ট ও ভিডিওর ওভারভিউ (0:04 – 1:21)
+## 1. প্রজেক্ট ও ভিডিওর ওভারভিউ 
 
 এই ভিডিওটি CampusX FastAPI সিরিজের অংশ, যেখানে একটি **Patient Management System API** তৈরি করা হচ্ছে।
 এই ভিডিওতে মূলত **Update** এবং **Delete** functionality যোগ করা হয়েছে, যার মাধ্যমে পুরো **CRUD cycle** সম্পূর্ণ হয়।
@@ -19,16 +19,16 @@
 
 ---
 
-## 2. Existing Endpoints রিক্যাপ (0:00 – 1:05)
+## 2. Existing Endpoints রিক্যাপ 
 
 ভিডিও শুরুতে আগের তৈরি করা endpoint গুলো রিভিউ করা হয়:
 
-### 2.1 View Endpoint (0:29)
+### 2.1 View Endpoint 
 
 * সব patient-এর সম্পূর্ণ তথ্য দেখায়
 * JSON ফাইল ডাটাবেস থেকে data read করে
 
-### 2.2 Patient Endpoint (0:34)
+### 2.2 Patient Endpoint 
 
 * Path parameter ব্যবহার করে
 * নির্দিষ্ট ID-র patient-এর তথ্য দেখায়
@@ -39,7 +39,7 @@
 
 ---
 
-### 2.3 Sort Endpoint (0:41)
+### 2.3 Sort Endpoint 
 
 * Query parameter ব্যবহার করে
 * Weight, height বা BMI অনুযায়ী patient list sort করে
@@ -50,7 +50,7 @@
 
 ---
 
-### 2.4 Create Endpoint (0:51)
+### 2.4 Create Endpoint 
 
 * POST method ব্যবহার করে
 * নতুন patient JSON ডাটাবেসে যোগ করে
@@ -58,11 +58,11 @@
 
 ---
 
-## 3. Update Endpoint (PUT Method) (1:56 – 25:52)
+## 3. Update Endpoint (PUT Method) 
 
 ---
 
-## 3.1 Update Endpoint কী এবং কেন? (1:57 – 2:54)
+## 3.1 Update Endpoint কী এবং কেন? 
 
 Update endpoint ব্যবহার করা হয় **existing patient-এর তথ্য পরিবর্তন করার জন্য**।
 
@@ -79,7 +79,7 @@ Update endpoint ব্যবহার করা হয় **existing patient-এর
 
 ---
 
-## 3.2 Partial Update-এর জন্য Pydantic Model (3:42 – 5:01)
+## 3.2 Partial Update-এর জন্য Pydantic Model 
 
 ### কেন নতুন model দরকার?
 
@@ -96,7 +96,7 @@ Update-এ সব field সবসময় দরকার হয় না
 
 ---
 
-## 3.3 Update Logic – Step by Step (9:24 – 11:29)
+## 3.3 Update Logic – Step by Step 
 
 ### Step 1: Existing Data Load করা
 
@@ -121,7 +121,7 @@ Update-এ সব field সবসময় দরকার হয় না
 
 ---
 
-## 3.4 BMI ও Verdict Recalculation (Tricky Part) (16:38 – 21:20)
+## 3.4 BMI ও Verdict Recalculation (Tricky Part) 
 
 ### সমস্যা:
 
@@ -144,7 +144,7 @@ Update-এ সব field সবসময় দরকার হয় না
 
 ---
 
-## 3.5 Update Endpoint Error Handling (22:52 – 25:52)
+## 3.5 Update Endpoint Error Handling 
 
 ### Case 1: Patient ID পাওয়া যায়নি
 
@@ -163,11 +163,11 @@ Update-এ সব field সবসময় দরকার হয় না
 
 ---
 
-## 4. Delete Endpoint (DELETE Method) (25:53 – 30:04)
+## 4. Delete Endpoint (DELETE Method) 
 
 ---
 
-## 4.1 Delete Endpoint Concept (26:03 – 26:20)
+## 4.1 Delete Endpoint Concept 
 
 Delete endpoint ব্যবহার করা হয় **existing patient record সম্পূর্ণভাবে মুছে ফেলার জন্য**।
 
@@ -181,7 +181,7 @@ Delete endpoint ব্যবহার করা হয় **existing patient record
 
 ---
 
-## 4.2 Delete Logic (27:24 – 28:20)
+## 4.2 Delete Logic 
 
 ### Step by Step:
 
@@ -192,7 +192,7 @@ Delete endpoint ব্যবহার করা হয় **existing patient record
 
 ---
 
-## 4.3 Delete Success ও Error Handling (29:09 – 30:04)
+## 4.3 Delete Success ও Error Handling 
 
 ### Case 1: ID Exists
 
@@ -210,7 +210,7 @@ Delete endpoint ব্যবহার করা হয় **existing patient record
 
 ---
 
-## 5. Project Completion & Next Steps (30:06 – 31:09)
+## 5. Project Completion & Next Steps
 
 এই ভিডিওর মাধ্যমে:
 
