@@ -242,5 +242,3 @@ Delete endpoint ব্যবহার করা হয় **existing patient record
 
 ---
 
-এই নোটগুলো **exam, viva, interview এবং real project**—সব জায়গায় ব্যবহার করার মতো করে লেখা হয়েছে।
-চাও তো আমি এটাকে **short revision sheet**, **diagram flow**, বা **code-mapping notes** হিসেবেও বানিয়ে দিতে পারি।
