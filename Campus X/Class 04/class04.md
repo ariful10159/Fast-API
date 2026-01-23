@@ -298,3 +298,9 @@ http://localhost:8000/view?sort_by=height&order=descending
 ---
 
 http://127.0.0.1:8000/sort?sort_by=height&order=desc
+
+http://127.0.0.1:8000/sort?sort_by=bmi&order=desc
+
+http://127.0.0.1:8000/docs#/default/sort_patients_sort_get
+
+
