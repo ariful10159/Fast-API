@@ -1,7 +1,7 @@
 ## API কী? (Software perspective) 
 
 * **Definition:**
-  API হলো এমন একটি ব্যবস্থা যার মাধ্যমে **দুটি software component** (যেমন front end ও back end) নির্দিষ্ট নিয়ম, protocol এবং data format ব্যবহার করে একে অপরের সাথে যোগাযোগ করে (8:54–9:08)।
+  API হলো এমন একটি ব্যবস্থা যার মাধ্যমে **দুটি software component** (যেমন front end ও back end) নির্দিষ্ট নিয়ম, protocol এবং data format ব্যবহার করে একে অপরের সাথে যোগাযোগ করে ।
 
 * **Restaurant উদাহরণ:**
 
@@ -10,7 +10,7 @@
   * Waiter = API
   * Menu card = Protocol
 
-  Waiter customer এর order kitchen এ নিয়ে যায় এবং খাবার এনে দেয় (11:42–12:44)।
+  Waiter customer এর order kitchen এ নিয়ে যায় এবং খাবার এনে দেয় ।
 
 * **Website উদাহরণ:**
 
