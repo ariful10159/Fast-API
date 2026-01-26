@@ -2,7 +2,7 @@ import json
 
 from fastapi import FastAPI 
 
-app = 
+app = FastAPI()
 
 def load_data():
     with open('patients.json', 'r') as f:
