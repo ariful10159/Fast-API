@@ -5,7 +5,7 @@
 
 ---
 
-## 1. ভূমিকা (Introduction)
+
 
 * Instructor: **Nitish Singh**
 * এটি FastAPI প্লেলিস্টের তৃতীয় ভিডিও
