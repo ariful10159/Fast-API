@@ -95,7 +95,7 @@ FastAPI তৈরি করা হয়েছে পুরোনো Python framewo
 * ব্রাউজার দিয়ে API দেখা হয় ।
 * নতুন endpoint যোগ করার উদাহরণ দেখানো হয়, যেমন `/about` ।
 
-**Interactive Documentation**:
+
 
 * `/docs` endpoint-এ স্বয়ংক্রিয়ভাবে তৈরি হওয়া ডকুমেন্টেশন দেখানো হয় ।
 * এখানে ব্রাউজার থেকেই API explore ও test করা যায় ।
